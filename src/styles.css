@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+    --clr-primary: 25 97% 53%;
+    --clr-white: 0 0% 100%;
+    --clr-light-grey: 217 12% 63%;
+    --clr-medium-grey: 216 12% 54%;
+    --clr-dark-blue: 213 19% 18%;
+    --clr-very-dark-blue: 216 12% 8%;
+}
+
+body {
+    background-color: hsl(var(--clr-very-dark-blue));
+    height: 100vh;
+    width: 100%;
+
+}
+
+h1 {
+    font-size: 2rem;
+    color: hsl(var(--clr-white));
+    font-weight: 500;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
