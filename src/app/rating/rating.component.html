@@ -1,6 +1,20 @@
-<div class="container">
+<div id="rating_container" class="container">
     <div class="icon circle flex_center">
         <img src="../../assets/Images/icon-star.svg" alt="star icon" width="20px" height="20px">
     </div>
     <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request.
+        All feedback is appreciated to help us improve our offering!
+    </p>
+
+    <div class="wrapper">
+        <div *ngFor="let rate of rates">
+            <button type="button" class="circle flex_center rate" (click)="onSelect(rate)">{{rate.value}}</button>
+        </div>
+    </div>
+
+    <button type="button" class="btn" (click)="onSubmit()">SUBMIT</button>
+</div>
+<div id="message_container" class="d-none">
+    <app-rating-message [parentData]="rateValue"></app-rating-message>
 </div>
